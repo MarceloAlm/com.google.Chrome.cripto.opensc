@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>com.google.Chrome.cripto.opensc</id>
+  <id>com.google.Chrome.pki.opensc</id>
   
-  <name>com.google.Chrome.cripto.opensc</name>
+  <name>com.google.Chrome.pki.opensc</name>
   <summary>This extension provides support for the OpenSC compatible tokens in Google Chrome.</summary>
   
   <metadata_license>CC0-1.0</metadata_license>

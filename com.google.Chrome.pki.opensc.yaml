@@ -1,4 +1,4 @@
-id: com.google.Chrome.cripto.opensc
+id: com.google.Chrome.pki.opensc
 branch: '0.1.0'
 runtime: com.google.Chrome
 runtime-version: 'test'
@@ -6,9 +6,9 @@ sdk: org.freedesktop.Sdk//24.08
 build-extension: true
 separate-locales: false
 build-options:
-  prefix: /app/cripto/opensc
-  prepend-ld-library-path: /app/cripto/opensc/lib
-  prepend-pkg-config-path: /app/cripto/opensc/lib/pkgconfig
+  prefix: /app/pki/opensc
+  prepend-ld-library-path: /app/pki/opensc/lib
+  prepend-pkg-config-path: /app/pki/opensc/lib/pkgconfig
 
 modules:
   - name: opensc
