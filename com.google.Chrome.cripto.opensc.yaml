@@ -28,11 +28,11 @@ modules:
           - --disable-documentation
           - --disable-polkit
         cleanup:
-          - '/bin/pcsc-spy'
+          - '/include'
           - '/lib/libpcscspy*'
-        post-install:
-          - rm ${FLATPAK_DEST}/sbin/pcscd
-          - rmdir ${FLATPAK_DEST}/sbin || true
+          - '/share'
+          - '/bin'
+          - '/sbin'
         sources:
           - type: archive
             url: https://pcsclite.apdu.fr/files/pcsc-lite-2.3.0.tar.xz
@@ -48,8 +48,6 @@ modules:
       - '/etc'
     post-install:
       - rm -fr ${FLATPAK_DEST}/include
-      - rm -fr ${FLATPAK_DEST}/share
-      - rm -fr ${FLATPAK_DEST}/lib/pkgconfig
 
       - mkdir -p ${FLATPAK_DEST}/modules
       - echo "module:${FLATPAK_DEST}/lib/pkcs11/opensc-pkcs11.so" > ${FLATPAK_DEST}/modules/opensc-pkcs11.module
