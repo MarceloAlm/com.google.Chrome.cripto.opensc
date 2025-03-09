@@ -18,5 +18,5 @@ cd com.google.Chrome.opensc/
 
 Build:
 ``` bash
-flatpak run org.flatpak.Builder --install --force-clean --user --install-deps-from=flathub --repo=/tmp/local-repo /tmp/_build  com.google.Chrome.pki.opensc.yaml
+flatpak run org.flatpak.Builder --install --force-clean --user --install-deps-from=flathub --repo=.local-repo _build  com.google.Chrome.pki.opensc.yaml
 ```
